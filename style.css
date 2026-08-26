@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..600;1,9..144,400..600&family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap');
+
+:root{
+  --paper: #F2ECDA;
+  --paper-deep: #E7DEC4;
+  --chalk: #FBF8EF;
+  --ink: #262319;
+  --ink-soft: #55503f;
+  --moss: #56643C;
+  --moss-deep: #384226;
+  --rust: #B1602C;
+  --line: #CBBE98;
+  --radius: 10px;
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:'Inter',sans-serif;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+
+.wrap{max-width:920px;margin:0 auto;padding:0 24px}
+
+/* ---------- header / hero ---------- */
+header.hero{padding:72px 0 0}
+.wordmark{
+  font-family:'Fraunces',serif;
+  font-style:italic;
+  font-weight:500;
+  font-size:clamp(48px,9vw,84px);
+  letter-spacing:-0.01em;
+  margin:0;
+  color:var(--ink);
+}
+.tagline{
+  font-family:'Space Mono',monospace;
+  font-size:13px;
+  letter-spacing:.04em;
+  text-transform:uppercase;
+  color:var(--ink-soft);
+  margin:10px 0 0;
+}
+.lede{
+  max-width:56ch;
+  font-size:17px;
+  color:var(--ink-soft);
+  margin:22px 0 0;
+}
+
+/* contour-line signature divider */
+.contours{width:100%;height:90px;display:block;margin-top:48px}
+.contours path{fill:none;stroke:var(--moss);stroke-width:1.2;opacity:.55}
+.contours path:nth-child(2){opacity:.35}
+.contours path:nth-child(3){opacity:.2}
+
+/* ---------- legend / niveau de lecture ---------- */
+.legend-box{
+  display:inline-flex;
+  align-items:center;
+  gap:14px;
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  padding:10px 16px;
+  background:var(--chalk);
+  margin:36px 0 8px;
+}
+.legend-label{
+  font-family:'Space Mono',monospace;
+  font-size:11px;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+  color:var(--ink-soft);
+}
+.legend-toggle{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.legend-toggle button{
+  font-family:'Inter',sans-serif;
+  font-size:13px;
+  font-weight:500;
+  padding:7px 14px;
+  border:none;
+  background:transparent;
+  color:var(--ink-soft);
+  cursor:pointer;
+  transition:background .15s ease,color .15s ease;
+}
+.legend-toggle button.active{background:var(--moss);color:var(--chalk)}
+.legend-toggle button:not(.active):hover{background:var(--paper-deep)}
+
+/* ---------- sections ---------- */
+section.group{margin-top:56px}
+.group-head{display:flex;align-items:baseline;gap:12px;margin-bottom:20px}
+.group-head h2{
+  font-family:'Fraunces',serif;
+  font-weight:500;
+  font-size:24px;
+  margin:0;
+}
+.group-head .count{
+  font-family:'Space Mono',monospace;
+  font-size:12px;
+  color:var(--ink-soft);
+}
+.group-note{font-size:14px;color:var(--ink-soft);margin:-10px 0 22px}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+
+.card{
+  position:relative;
+  background:var(--chalk);
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  padding:20px 22px 22px;
+  transition:border-color .15s ease, transform .15s ease;
+}
+.card:hover{border-color:var(--moss);transform:translateY(-2px)}
+.card a.card-link{position:absolute;inset:0;border-radius:var(--radius)}
+.card-top{display:flex;align-items:flex-start;justify-content:space-between;gap:10px}
+.plate{
+  font-family:'Space Mono',monospace;
+  font-size:11px;
+  color:var(--rust);
+  border:1px solid var(--rust);
+  border-radius:20px;
+  padding:2px 9px;
+  white-space:nowrap;
+}
+.badge-exemple{
+  font-family:'Space Mono',monospace;
+  font-size:10px;
+  letter-spacing:.04em;
+  text-transform:uppercase;
+  color:var(--ink-soft);
+  background:var(--paper-deep);
+  border-radius:20px;
+  padding:2px 9px;
+  white-space:nowrap;
+}
+.card h3{
+  font-family:'Fraunces',serif;
+  font-weight:500;
+  font-size:20px;
+  margin:14px 0 6px;
+}
+.card p{font-size:14px;color:var(--ink-soft);margin:0}
+.card p.full{display:none}
+.legend-full .card p.simple{display:none}
+.legend-full .card p.full{display:block}
+.card .cta{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  margin-top:14px;
+  font-size:13px;
+  font-weight:500;
+  color:var(--moss-deep);
+}
+.card .cta svg{width:13px;height:13px}
+
+/* install note, only shown in legend-full */
+.install-note{display:none;font-family:'Space Mono',monospace;font-size:11px;color:var(--ink-soft);margin-top:12px;padding-top:12px;border-top:1px dashed var(--line)}
+.legend-full .install-note{display:block}
+
+/* ---------- footer ---------- */
+footer{margin:80px 0 48px;padding-top:24px;border-top:1px solid var(--line)}
+footer p{font-size:13px;color:var(--ink-soft);max-width:56ch}
+footer a{color:var(--moss-deep)}
+
+@media (max-width:520px){
+  header.hero{padding-top:48px}
+  .legend-box{flex-wrap:wrap}
+}
+
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .card{transition:none}
+}

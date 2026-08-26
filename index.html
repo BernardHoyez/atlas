@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Atlas — outils de randonnée et de géologie de terrain</title>
+<meta name="description" content="Atlas relie les applications et sites de randonnée et de géologie de craie : geotour, terrain, photo2kml, albatre, rollevillerando, randovar.">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#F2ECDA">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <header class="hero">
+    <p class="tagline">carnet d'atelier — randonnée &amp; géologie de craie</p>
+    <h1 class="wordmark">Atlas</h1>
+    <p class="lede">Six outils indépendants, pensés pour le terrain : créer un itinéraire, le suivre hors-ligne, et publier ce qu'on y trouve. Atlas ne fait que les relier.</p>
+
+    <svg class="contours" viewBox="0 0 920 90" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0,60 C120,20 220,90 340,50 C460,10 560,80 680,45 C780,18 860,55 920,30"/>
+      <path d="M0,75 C130,45 230,95 350,68 C470,40 570,90 690,60 C790,38 860,68 920,48"/>
+      <path d="M0,45 C110,70 210,15 330,40 C450,65 550,20 670,42 C770,58 850,30 920,50"/>
+    </svg>
+
+    <div class="legend-box">
+      <span class="legend-label">légende</span>
+      <div class="legend-toggle">
+        <button id="btn-simple" type="button">simplifiée</button>
+        <button id="btn-full" type="button">complète</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="group" id="outils">
+    <div class="group-head">
+      <h2>Créer et suivre</h2>
+      <span class="count"><span id="outils-count">0</span> outils</span>
+    </div>
+    <p class="group-note">Les trois applications de l'atelier — de la création d'un itinéraire à son suivi sans réseau.</p>
+    <div class="grid" id="outils-grid"></div>
+  </section>
+
+  <section class="group" id="vitrines">
+    <div class="group-head">
+      <h2>Publié sur le terrain</h2>
+      <span class="count"><span id="vitrines-count">0</span> sites</span>
+    </div>
+    <p class="group-note">Des catalogues publics produits avec les outils ci-dessus — deux d'entre eux sont donnés en exemple, à reproduire pour tes propres randonnées.</p>
+    <div class="grid" id="vitrines-grid"></div>
+  </section>
+
+  <footer>
+    <p>Chaque application fonctionne seule et s'installe séparément sur l'écran d'accueil. Atlas est un simple point d'entrée, sans compte ni serveur — tout reste hébergé statiquement.</p>
+  </footer>
+
+</div>
+
+<script src="app.js"></script>
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => navigator.serviceWorker.register('sw.js'));
+}
+</script>
+</body>
+</html>

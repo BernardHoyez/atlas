@@ -30,6 +30,15 @@ const APPS = [
     install: 'usage ponctuel dans le navigateur, aucune installation nécessaire'
   },
   {
+    plate: 'PL.07',
+    group: 'outils',
+    name: 'synchrophoto',
+    url: 'https://bernardhoyez.github.io/synchrophoto/',
+    simple: 'Corrige et complète les données EXIF des photos à partir d\'une trace GPX/KML.',
+    full: 'Géotague ou corrige les coordonnées EXIF d\'un lot de photos à partir d\'une trace GPX/KML, avec calibrage du décalage horaire par photo-témoin et aperçu des fichiers RAW. Utile avant d\'utiliser une photo dans geotour ou photo2kml quand le GPS de l\'appareil a dérivé ou manque.',
+    install: 'installation : ouvrir le lien, puis "ajouter à l\'écran d\'accueil"'
+  },
+  {
     plate: 'PL.04',
     group: 'vitrines',
     name: 'albatre',

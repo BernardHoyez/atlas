@@ -6,6 +6,8 @@ Portail d'accueil statique reliant les applications et sites de randonnée / gé
 - **terrain** — suivi hors-ligne sur le terrain
 - **photo2kml** — photo géolocalisée → repère KML/GPX
 - **synchrophoto** — correction des données EXIF des photos (géotagage, calibrage horaire)
+- **kml2gpx** — conversion bidirectionnelle KML ↔ GPX
+- **mp3generator** — texte → commentaire audio MP3 (synthèse vocale hors-ligne)
 - **albatre** — catalogue des coupes géologiques de la Côte d'Albâtre
 - **rollevillerando** (exemple) — randonnées du village de Rolleville
 - **randovar** (exemple) — randonnées d'un club de randonnée du Var

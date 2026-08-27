@@ -39,6 +39,24 @@ const APPS = [
     install: 'installation : ouvrir le lien, puis "ajouter à l\'écran d\'accueil"'
   },
   {
+    plate: 'PL.08',
+    group: 'outils',
+    name: 'kml2gpx',
+    url: 'https://bernardhoyez.github.io/kml2gpx/',
+    simple: 'Convertit un fichier KML en GPX, et inversement.',
+    full: 'Conversion bidirectionnelle KML ↔ GPX, avec fonds de carte IGN Géoplateforme pour vérifier visuellement le résultat. Utile quand un appareil ou un logiciel n\'accepte qu\'un seul des deux formats.',
+    install: 'usage ponctuel dans le navigateur, aucune installation nécessaire'
+  },
+  {
+    plate: 'PL.09',
+    group: 'outils',
+    name: 'mp3generator',
+    url: 'https://bernardhoyez.github.io/mp3generator/',
+    simple: 'Transforme un commentaire texte en fichier audio MP3.',
+    full: 'Synthèse vocale hors-ligne (voix naturelle, sans limite d\'usage) à partir d\'un texte, avec export direct en MP3. Sert à préparer les commentaires audio d\'une visite guidée geotour sans les enregistrer soi-même.',
+    install: 'installation : ouvrir le lien, puis "ajouter à l\'écran d\'accueil"'
+  },
+  {
     plate: 'PL.04',
     group: 'vitrines',
     name: 'albatre',

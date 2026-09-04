@@ -57,6 +57,15 @@ const APPS = [
     install: 'installation : ouvrir le lien, puis "ajouter à l\'écran d\'accueil"'
   },
   {
+    plate: 'PL.10',
+    group: 'outils',
+    name: 'waypoint_tri',
+    url: 'https://bernardhoyez.github.io/waypoint_tri/',
+    simple: 'Réordonne géographiquement les waypoints d\'un fichier KMZ.',
+    full: 'Trie les waypoints d\'un fichier KMZ (photos géolocalisées attachées) par longitude ou par latitude, dans le sens choisi, et permet de vérifier le résultat sur une carte avec marqueurs numérotés (OSM, plan IGN, orthophotos). Produit un nouveau KMZ dans l\'ordre voulu, prêt pour geotour.',
+    install: 'installation : ouvrir le lien, puis "ajouter à l\'écran d\'accueil"'
+  },
+  {
     plate: 'PL.04',
     group: 'vitrines',
     name: 'albatre',

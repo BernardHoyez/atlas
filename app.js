@@ -66,6 +66,15 @@ const APPS = [
     install: 'installation : ouvrir le lien, puis "ajouter à l\'écran d\'accueil"'
   },
   {
+    plate: 'PL.11',
+    group: 'outils',
+    name: 'randogeol',
+    url: 'https://bernardhoyez.github.io/randogeol/',
+    simple: 'Superpose un tracé GPX/KML sur les cartes géologiques BRGM et identifie la formation au clic.',
+    full: 'Compagnon de terrain pour la géologie : superpose un tracé GPX ou KML aux cartes géologiques BRGM au 1/50 000 (scannée, harmonisée, avec estompage du relief), affiche la position GPS en direct, et identifie la formation géologique exacte au clic (notation type J2b) à partir des données vectorielles BD Charm-50. Les départements se téléchargent et s\'importent directement dans l\'app (aucun serveur), avec export/import de sauvegarde pour les dupliquer d\'un appareil à l\'autre.',
+    install: 'installation : ouvrir le lien, puis "ajouter à l\'écran d\'accueil" — importer le(s) département(s) BD Charm-50 avant de partir sur le terrain'
+  },
+  {
     plate: 'PL.04',
     group: 'vitrines',
     name: 'albatre',

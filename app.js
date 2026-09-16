@@ -75,6 +75,15 @@ const APPS = [
     install: 'installation : ouvrir le lien, puis "ajouter à l\'écran d\'accueil" — importer le(s) département(s) BD Charm-50 avant de partir sur le terrain'
   },
   {
+    plate: 'PL.12',
+    group: 'outils',
+    name: 'randogenerateur',
+    url: 'https://bernardhoyez.github.io/randogenerateur/',
+    simple: 'Prépare rando.json et randonnees.json pour un site de randonnées, sans écrire de JSON à la main.',
+    full: 'À partir du paquet Déploiement de geotour : calcule automatiquement distance et dénivelé D+, propose une vignette recadrable, et met à jour randonnees.json (détection du format des entrées, ajout en début ou fin de liste). Produit un dossier prêt à déposer dans randonnees/, pour rollevillerando, randovar ou tout futur site suivant la même convention.',
+    install: 'installation : ouvrir le lien, puis "ajouter à l\'écran d\'accueil"'
+  },
+  {
     plate: 'PL.04',
     group: 'vitrines',
     name: 'albatre',

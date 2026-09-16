@@ -10,6 +10,7 @@ Portail d'accueil statique reliant les applications et sites de randonnée / gé
 - **mp3generator** — texte → commentaire audio MP3 (synthèse vocale hors-ligne)
 - **waypoint_tri** — tri géographique des waypoints d'un fichier KMZ
 - **randogeol** — tracé GPX/KML sur cartes géologiques BRGM + identification de formation (BD Charm-50)
+- **randogenerateur** — génère rando.json et randonnees.json pour un site de randonnées, sans écrire de JSON à la main
 - **albatre** — catalogue des coupes géologiques de la Côte d'Albâtre
 - **rollevillerando** (exemple) — randonnées du village de Rolleville
 - **randovar** (exemple) — randonnées d'un club de randonnée du Var
@@ -51,5 +52,5 @@ Fichiers statiques, prêts pour GitHub Pages (`bernardhoyez.github.io/atlas`) ou
 
 ## Limites connues
 
-- Les liens vers les 11 applications sont en dur dans `app.js` (pas de découverte automatique) — volontaire, vu le petit nombre d'entrées.
+- Les liens vers les 12 applications sont en dur dans `app.js` (pas de découverte automatique) — volontaire, vu le petit nombre d'entrées.
 - Aucune vérification que les apps liées sont bien en ligne : un lien mort resterait affiché tel quel.

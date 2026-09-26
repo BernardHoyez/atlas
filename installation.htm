@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Installer une application PWA</title>
+
+<meta name="description"
+      content="Guide simple pour installer une application PWA sur Android, iPhone, iPad, Windows, Mac et Chromebook.">
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont,
+               "Segoe UI", Roboto, Arial, sans-serif;
+  background: #f4f6f8;
+  color: #202124;
+  line-height: 1.6;
+}
+
+header {
+  background: #1769aa;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0 0 10px;
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+
+header p {
+  max-width: 750px;
+  margin: auto;
+  font-size: 1.1rem;
+  opacity: .95;
+}
+
+main {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 0 18px;
+}
+
+.intro {
+  background: white;
+  padding: 25px;
+  border-radius: 14px;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.08);
+}
+
+h2 {
+  color: #1769aa;
+  margin-top: 0;
+}
+
+.platform {
+  background: white;
+  border-radius: 14px;
+  padding: 25px;
+  margin: 22px 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,.08);
+}
+
+.platform h2 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #1769aa;
+}
+
+.icon {
+  font-size: 2rem;
+}
+
+.steps {
+  counter-reset: step;
+  list-style: none;
+  padding: 0;
+}
+
+.steps li {
+  counter-increment: step;
+  position: relative;
+  padding: 12px 12px 12px 55px;
+  margin: 10px 0;
+  background: #f5f8fb;
+  border-radius: 10px;
+}
+
+.steps li::before {
+  content: counter(step);
+  position: absolute;
+  left: 15px;
+  top: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #1769aa;
+  color: white;
+  text-align: center;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.tip {
+  background: #fff8df;
+  border-left: 5px solid #e4b400;
+  padding: 15px 18px;
+  margin-top: 18px;
+  border-radius: 6px;
+}
+
+.note {
+  background: #eaf5ff;
+  border-left: 5px solid #1769aa;
+  padding: 15px 18px;
+  margin-top: 18px;
+  border-radius: 6px;
+}
+
+strong {
+  color: #173b57;
+}
+
+footer {
+  text-align: center;
+  padding: 35px 20px;
+  color: #666;
+  font-size: .9rem;
+}
+
+@media (max-width: 600px) {
+  header {
+    padding: 30px 15px;
+  }
+
+  .platform,
+  .intro {
+    padding: 20px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Installer une application PWA</h1>
+  <p>
+    Une PWA est une application web qui peut être installée sur votre
+    téléphone, votre tablette ou votre ordinateur.
+  </p>
+</header>
+
+<main>
+
+<section class="intro">
+  <h2>Qu'est-ce qu'une PWA ?</h2>
+
+  <p>
+    Une <strong>PWA</strong> (<em>Progressive Web App</em>) est un site
+    Internet conçu pour fonctionner comme une véritable application.
+    Il n'est généralement pas nécessaire de passer par le Play Store
+    ou l'App Store.
+  </p>
+
+  <p>
+    Une fois installée, son icône apparaît sur l'écran d'accueil ou dans
+    la liste des applications. Il suffit ensuite de toucher ou de cliquer
+    sur cette icône pour la lancer.
+  </p>
+
+  <div class="note">
+    <strong>À savoir :</strong> la procédure varie légèrement selon
+    l'appareil et le navigateur utilisé.
+  </div>
+</section>
+
+
+<section class="platform">
+
+  <h2><span class="icon">📱</span> Android</h2>
+
+  <p>
+    La méthode la plus simple consiste à utiliser
+    <strong>Google Chrome</strong>.
+  </p>
+
+  <ol class="steps">
+    <li>
+      Ouvrez la page de l'application avec Chrome.
+    </li>
+
+    <li>
+      Attendez quelques secondes. Si l'application est installable,
+      Chrome peut afficher un bouton ou un message proposant
+      <strong>« Installer l'application »</strong>.
+    </li>
+
+    <li>
+      Appuyez sur <strong>Installer</strong>.
+    </li>
+
+    <li>
+      Si aucune proposition n'apparaît, ouvrez le menu
+      <strong>⋮</strong> de Chrome.
+    </li>
+
+    <li>
+      Choisissez <strong>Installer l'application</strong>
+      ou, selon la version d'Android,
+      <strong>Ajouter à l'écran d'accueil</strong>.
+    </li>
+
+    <li>
+      Confirmez l'installation.
+    </li>
+  </ol>
+
+  <div class="tip">
+    <strong>Conseil :</strong> une fois installée, l'application
+    possède généralement sa propre icône dans la liste des applications.
+  </div>
+
+</section>
+
+
+<section class="platform">
+
+  <h2><span class="icon">🍎</span> iPhone et iPad</h2>
+
+  <p>
+    Sur iPhone et iPad, utilisez de préférence
+    <strong>Safari</strong>.
+  </p>
+
+  <ol class="steps">
+    <li>
+      Ouvrez la page de la PWA dans <strong>Safari</strong>.
+    </li>
+
+    <li>
+      Appuyez sur le bouton <strong>Partager</strong>
+      <strong>□↑</strong>.
+    </li>
+
+    <li>
+      Faites défiler le menu et choisissez
+      <strong>« Ajouter à l'écran d'accueil »</strong>.
+    </li>
+
+    <li>
+      Modifiez éventuellement le nom de l'application.
+    </li>
+
+    <li>
+      Appuyez sur <strong>Ajouter</strong>.
+    </li>
+  </ol>
+
+  <p>
+    Une nouvelle icône apparaît alors sur l'écran d'accueil.
+    Touchez cette icône pour lancer l'application.
+  </p>
+
+  <div class="note">
+    <strong>Important :</strong> sur iPhone et iPad, l'installation
+    d'une PWA se fait directement depuis Safari. Si vous utilisez
+    un autre navigateur, l'option peut ne pas être proposée de la
+    même manière.
+  </div>
+
+</section>
+
+
+<section class="platform">
+
+  <h2><span class="icon">🪟</span> Windows</h2>
+
+  <p>
+    Sur Windows 10 ou Windows 11, les navigateurs
+    <strong>Microsoft Edge</strong> et <strong>Google Chrome</strong>
+    permettent généralement d'installer une PWA.
+  </p>
+
+  <ol class="steps">
+    <li>
+      Ouvrez la page de l'application dans Edge ou Chrome.
+    </li>
+
+    <li>
+      Recherchez l'icône <strong>Installer</strong> dans la barre
+      d'adresse. Elle peut apparaître sous la forme d'un petit écran
+      avec un symbole « + ».
+    </li>
+
+    <li>
+      Cliquez sur cette icône puis sur <strong>Installer</strong>.
+    </li>
+
+    <li>
+      Si l'icône n'apparaît pas, ouvrez le menu du navigateur
+      <strong>⋮</strong>.
+    </li>
+
+    <li>
+      Cherchez <strong>Installer cette application</strong>
+      ou une option équivalente.
+    </li>
+  </ol>
+
+  <p>
+    L'application peut ensuite apparaître dans le menu
+    <strong>Démarrer</strong> de Windows et éventuellement être
+    ajoutée à la barre des tâches.
+  </p>
+
+</section>
+
+
+<section class="platform">
+
+  <h2><span class="icon">💻</span> Mac</h2>
+
+  <p>
+    Sur un Mac, les PWA peuvent être installées notamment avec
+    <strong>Google Chrome</strong> ou <strong>Microsoft Edge</strong>.
+  </p>
+
+  <ol class="steps">
+    <li>
+      Ouvrez la page de l'application dans Chrome ou Edge.
+    </li>
+
+    <li>
+      Cherchez le bouton <strong>Installer</strong> dans la barre
+      d'adresse.
+    </li>
+
+    <li>
+      Cliquez dessus puis confirmez l'installation.
+    </li>
+
+    <li>
+      Si le bouton n'est pas visible, ouvrez le menu
+      <strong>⋮</strong> et recherchez l'option d'installation.
+    </li>
+  </ol>
+
+  <p>
+    L'application pourra ensuite être lancée comme une application
+    classique depuis le Mac.
+  </p>
+
+</section>
+
+
+<section class="platform">
+
+  <h2><span class="icon">💻</span> Chromebook</h2>
+
+  <p>
+    Sur Chromebook, la procédure est très proche de celle d'Android
+    et de Chrome sur ordinateur.
+  </p>
+
+  <ol class="steps">
+    <li>
+      Ouvrez l'application avec <strong>Google Chrome</strong>.
+    </li>
+
+    <li>
+      Cliquez sur le bouton <strong>Installer</strong> dans la barre
+      d'adresse lorsqu'il est proposé.
+    </li>
+
+    <li>
+      Confirmez l'installation.
+    </li>
+  </ol>
+
+  <p>
+    L'application apparaît ensuite dans le lanceur d'applications
+    du Chromebook.
+  </p>
+
+</section>
+
+
+<section class="platform">
+
+  <h2><span class="icon">🌐</span> Si aucun bouton « Installer » n'apparaît</h2>
+
+  <p>
+    Ce n'est pas forcément un problème. Certains navigateurs ne
+    proposent pas automatiquement l'installation.
+  </p>
+
+  <ol class="steps">
+    <li>
+      Ouvrez le <strong>menu du navigateur</strong> (souvent représenté
+      par <strong>⋮</strong> ou <strong>☰</strong>).
+    </li>
+
+    <li>
+      Recherchez une option appelée
+      <strong>Installer l'application</strong>,
+      <strong>Installer</strong> ou
+      <strong>Ajouter à l'écran d'accueil</strong>.
+    </li>
+
+    <li>
+      Si cette option n'existe pas, vérifiez que vous utilisez un
+      navigateur compatible avec les PWA.
+    </li>
+  </ol>
+
+  <div class="tip">
+    <strong>Astuce :</strong> sur smartphone, essayez en priorité
+    Chrome sur Android et Safari sur iPhone/iPad.
+  </div>
+
+</section>
+
+
+<section class="platform">
+
+  <h2><span class="icon">🔄</span> Mettre à jour une PWA</h2>
+
+  <p>
+    Une PWA se met généralement à jour automatiquement lorsque son
+    développeur publie une nouvelle version.
+  </p>
+
+  <p>
+    Si vous constatez qu'une ancienne version est toujours affichée,
+    fermez complètement l'application puis relancez-la.
+    Une actualisation de la page peut également être nécessaire.
+  </p>
+
+</section>
+
+
+<section class="platform">
+
+  <h2><span class="icon">🗑️</span> Désinstaller une PWA</h2>
+
+  <p>
+    Une PWA se désinstalle comme une application classique.
+  </p>
+
+  <ul>
+    <li>
+      <strong>Android :</strong> appui prolongé sur l'icône puis
+      <strong>Désinstaller</strong>.
+    </li>
+
+    <li>
+      <strong>iPhone/iPad :</strong> appui prolongé sur l'icône puis
+      <strong>Supprimer l'app</strong>.
+    </li>
+
+    <li>
+      <strong>Windows :</strong> utilisez le menu
+      <strong>Démarrer</strong> ou les paramètres des applications.
+    </li>
+
+    <li>
+      <strong>Mac :</strong> utilisez la méthode proposée par le
+      navigateur ayant installé la PWA.
+    </li>
+  </ul>
+
+</section>
+
+
+<section class="intro">
+
+  <h2>En résumé</h2>
+
+  <p>
+    <strong>Android :</strong> Chrome → menu ⋮ → Installer.
+  </p>
+
+  <p>
+    <strong>iPhone / iPad :</strong> Safari → Partager □↑ →
+    Ajouter à l'écran d'accueil.
+  </p>
+
+  <p>
+    <strong>Windows :</strong> Chrome ou Edge → Installer.
+  </p>
+
+  <p>
+    <strong>Mac :</strong> Chrome ou Edge → Installer.
+  </p>
+
+  <p>
+    <strong>Chromebook :</strong> Chrome → Installer.
+  </p>
+
+  <div class="note">
+    <strong>Une fois installée :</strong> vous n'avez plus besoin
+    de rechercher l'adresse Internet de l'application. Utilisez
+    simplement son icône comme pour n'importe quelle autre application.
+  </div>
+
+</section>
+
+</main>
+
+<footer>
+  Guide d'installation des applications PWA
+</footer>
+
+</body>
+</html>

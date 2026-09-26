@@ -84,6 +84,15 @@ const APPS = [
     install: 'installation : ouvrir le lien, puis "ajouter à l\'écran d\'accueil"'
   },
   {
+    plate: 'PL.13',
+    group: 'outils',
+    name: 'gpxkml_2_html',
+    url: 'https://bernardhoyez.github.io/gpxkml_2_html/',
+    simple: 'Convertit une trace GPX/KML en page HTML autonome, avec carte, statistiques et export PDF.',
+    full: 'Transforme un fichier GPX ou KML en une page HTML unique et portable : carte Leaflet (OSM, IGN Plan v2 ou orthophoto IGN 20 cm), statistiques (distance, dénivelé, durée), waypoints avec popups zoomables adaptées au tactile. Depuis la page générée : re-export GPX/KML/GeoJSON, impression, export PDF ou partage. Fonctionne hors ligne, sans compte ni serveur.',
+    install: 'installation : ouvrir le lien, puis "ajouter à l\'écran d\'accueil"'
+  },
+  {
     plate: 'PL.04',
     group: 'vitrines',
     name: 'albatre',

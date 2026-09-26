@@ -15,6 +15,7 @@ Portail d'accueil statique reliant les applications et sites de randonnée / gé
 - **albatre** — catalogue des coupes géologiques de la Côte d'Albâtre
 - **rollevillerando** (exemple) — randonnées du village de Rolleville
 - **randovar** (exemple) — randonnées d'un club de randonnée du Var
+- **varnature** — catalogue naturaliste hors-ligne de la flore et de la faune du Var
 
 Aucune app existante n'est modifiée : Atlas est un simple point d'entrée statique, sans backend.
 
@@ -53,5 +54,5 @@ Fichiers statiques, prêts pour GitHub Pages (`bernardhoyez.github.io/atlas`) ou
 
 ## Limites connues
 
-- Les liens vers les 13 applications sont en dur dans `app.js` (pas de découverte automatique) — volontaire, vu le petit nombre d'entrées.
+- Les liens vers les 14 applications sont en dur dans `app.js` (pas de découverte automatique) — volontaire, vu le petit nombre d'entrées.
 - Aucune vérification que les apps liées sont bien en ligne : un lien mort resterait affiché tel quel.

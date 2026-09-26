@@ -120,6 +120,15 @@ const APPS = [
     simple: 'Randonnées du club de randonnée du Var — présenté ici en exemple.',
     full: 'Second exemple de site de randonnées généré à partir de geotour, pour un club de randonnée du Var. Même principe que rollevillerando, avec une identité visuelle propre.',
     install: null
+  },
+  {
+    plate: 'PL.14',
+    group: 'vitrines',
+    name: 'varnature',
+    url: 'https://bernardhoyez.github.io/varnature/',
+    simple: 'Catalogue naturaliste hors-ligne de la flore et de la faune du Var, observables en randonnée.',
+    full: 'Catalogue de plus de 500 fiches espèces (flore et faune) du Var, avec photos et commentaires descriptifs, consultable entièrement hors ligne. Utile en poche pendant une randonnée pour identifier une plante ou un animal observé sur le terrain.',
+    install: null
   }
 ];
 

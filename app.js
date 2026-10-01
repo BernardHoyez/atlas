@@ -93,6 +93,15 @@ const APPS = [
     install: 'installation : ouvrir le lien, puis "ajouter à l\'écran d\'accueil"'
   },
   {
+    plate: 'PL.15',
+    group: 'outils',
+    name: 'randos',
+    url: 'https://github.com/BernardHoyez/randos/releases/latest/download/randos.apk',
+    simple: 'Application Android de randonnée hors-ligne : alternative open-source à Orux Maps.',
+    full: 'Application Android native, pensée comme alternative open-source à Orux Maps : fonds de carte raster en ligne et hors-ligne (fichiers MBtiles importés, ou cache de tuiles téléchargé à l\'avance depuis un fond en ligne), waypoints avec photo, boussole, enregistrement de trace avec statistiques (dénivelé, durée, vitesse), et import/export GPX, KML, KMZ.',
+    install: 'installation : télécharger le fichier .apk depuis le lien, puis l\'ouvrir depuis l\'appareil Android (autoriser "sources inconnues" si demandé) — contrairement aux autres outils, ce n\'est pas une PWA à ajouter à l\'écran d\'accueil, mais une application à installer'
+  },
+  {
     plate: 'PL.04',
     group: 'vitrines',
     name: 'albatre',

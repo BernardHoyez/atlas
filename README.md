@@ -12,6 +12,11 @@ Portail d'accueil statique reliant les applications et sites de randonnée / gé
 - **randogeol** — tracé GPX/KML sur cartes géologiques BRGM + identification de formation (BD Charm-50)
 - **randogenerateur** — génère rando.json et randonnees.json pour un site de randonnées, sans écrire de JSON à la main
 - **gpxkml_2_html** — convertit une trace GPX/KML en page HTML autonome (carte, statistiques, waypoints zoomables)
+- **exif_change** — visualisation et correction des coordonnées GPS EXIF d'une photo (carte, saisie manuelle, copie _loc)
+- **excursion** — création et consultation de circuits de randonnée multimédias en KMZ (modes Production et Visite)
+- **osm2mbt** — conversion d'une zone OpenStreetMap en fichier MBTiles (petites zones, bas zoom : politique des tuiles OSM)
+- **excel2map** — lieux d'un fichier Excel affichés sur carte, export JSON/GPX/KML
+- **gpxprepa** — analyse d'une trace GPX/KML/KMZ (profil altimétrique, milieux traversés, résumé IA optionnel)
 - **randos** — application Android de randonnée hors-ligne (alternative open-source à Orux Maps) : fonds raster en ligne/hors-ligne, waypoints photo, GPX/KML/KMZ
 - **albatre** — catalogue des coupes géologiques de la Côte d'Albâtre
 - **rollevillerando** (exemple) — randonnées du village de Rolleville

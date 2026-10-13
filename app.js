@@ -93,6 +93,51 @@ const APPS = [
     install: 'installation : ouvrir le lien, puis "ajouter à l\'écran d\'accueil"'
   },
   {
+    plate: 'PL.16',
+    group: 'outils',
+    name: 'exif_change',
+    url: 'https://bernardhoyez.github.io/exif_change/',
+    simple: 'Visualise et corrige les coordonnées GPS dans les données EXIF d\'une photo.',
+    full: 'Importe une photo (JPEG, TIFF, HEIC, WebP, RAW), lit ses coordonnées GPS EXIF et les affiche sur une carte (OSM, IGN Plan V2, IGN BD Ortho) avec un marqueur repositionnable, ou par saisie manuelle de la latitude et de la longitude. Enregistre une copie de la photo avec les coordonnées retenues (suffixe _loc). Traitement entièrement local : aucune image n\'est envoyée sur un serveur.',
+    install: 'installation : ouvrir le lien, puis "ajouter à l\'écran d\'accueil" — l\'écriture des coordonnées ne fonctionne que sur les fichiers JPEG'
+  },
+  {
+    plate: 'PL.17',
+    group: 'outils',
+    name: 'excursion',
+    url: 'https://bernardhoyez.github.io/excursion/',
+    simple: 'Crée et consulte des circuits de randonnée multimédias dans un fichier KMZ.',
+    full: 'Deux modes. Production : charge une trace GPX, KML ou KMZ, l\'affiche sur carte (OSM, IGN Plan V2, IGN BD Ortho), puis ajoute, déplace et édite des waypoints (nom, commentaire HTML, photo, vidéo, audio, page HTML) et sauvegarde le tout en KMZ structuré. Visite : charge ce KMZ et le parcourt point par point (précédent / suivant), avec vignettes, lecteurs audio et vidéo.',
+    install: 'installation : ouvrir le lien, puis "ajouter à l\'écran d\'accueil"'
+  },
+  {
+    plate: 'PL.18',
+    group: 'outils',
+    name: 'osm2mbt',
+    url: 'https://bernardhoyez.github.io/osm2mbt/',
+    simple: 'Convertit une zone de carte OpenStreetMap en fichier MBTiles hors-ligne.',
+    full: 'Choisis un fond OpenStreetMap (standard, France ou Humanitarian), charge éventuellement une trace GPX/KML pour te repérer, trace un rectangle redimensionnable, règle les niveaux de zoom min et max, puis télécharge un fichier MBTiles raster (PNG). Attention : générer un MBTiles à partir des tuiles publiques d\'OpenStreetMap est un téléchargement massif qui contrevient à la politique d\'utilisation de ces tuiles — à réserver à de très petites zones et à de bas niveaux de zoom.',
+    install: 'installation : ouvrir le lien, puis "ajouter à l\'écran d\'accueil" — limiter la zone et le zoom (politique d\'utilisation des tuiles OSM)'
+  },
+  {
+    plate: 'PL.19',
+    group: 'outils',
+    name: 'excel2map',
+    url: 'https://bernardhoyez.github.io/excel2map/',
+    simple: 'Affiche sur une carte les lieux d\'un fichier Excel et les exporte en GPX, KML ou JSON.',
+    full: 'Charge un fichier Excel (XLS ou XLSX) dont la première colonne contient l\'intitulé du lieu et la seconde ses coordonnées « latitude,longitude ». Les points s\'affichent sur une carte OpenStreetMap avec épingles et intitulés, zoom automatique sur l\'ensemble, puis s\'exportent en JSON, en GPX (waypoints) ou en KML (placemarks). Pratique pour transformer une liste de lieux en waypoints exploitables dans geotour ou tout lecteur de cartes.',
+    install: 'installation : ouvrir le lien, puis "ajouter à l\'écran d\'accueil"'
+  },
+  {
+    plate: 'PL.20',
+    group: 'outils',
+    name: 'gpxprepa',
+    url: 'https://bernardhoyez.github.io/gpxprepa/',
+    simple: 'Analyse une trace GPX/KML/KMZ : parcours, profil altimétrique, milieux traversés.',
+    full: 'Charge une trace GPX, KML ou KMZ et produit immédiatement une analyse : parcours, profil altimétrique, analyse de l\'itinéraire, milieux traversés, points remarquables, et rapport à télécharger. Un résumé par IA générative est possible en option (API compatible OpenAI, clé conservée dans le navigateur) ; sans clé, l\'analyse locale fonctionne seule, sans compte, et les données du fichier restent dans le navigateur.',
+    install: 'installation : ouvrir le lien, puis "ajouter à l\'écran d\'accueil"'
+  },
+  {
     plate: 'PL.15',
     group: 'outils',
     name: 'randos',

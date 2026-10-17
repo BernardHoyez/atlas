@@ -138,6 +138,15 @@ const APPS = [
     install: 'installation : ouvrir le lien, puis "ajouter à l\'écran d\'accueil"'
   },
   {
+    plate: 'PL.21',
+    group: 'outils',
+    name: 'trackchain',
+    url: 'https://bernardhoyez.github.io/trackchain/',
+    simple: 'Enchaîne deux traces GPX/KML/KMZ en un seul parcours, avec inversion possible du sens.',
+    full: 'Charge de 1 à 5 traces GPX, KML ou KMZ, affichées sur une carte (OSM, IGN Plan V2, IGN BD Ortho). Inverse le sens d\'une trace si besoin, choisis-en deux à enchaîner, puis relie-les par une ligne droite (arrivée → début) ou par un itinéraire routé (IGN Géoplateforme, repli automatique sur la ligne droite si le service est indisponible). Un aperçu de la jonction permet de valider ou de revenir au linéaire avant de sauvegarder la trace chaînée en GPX (KML en option).',
+    install: 'installation : ouvrir le lien, puis "ajouter à l\'écran d\'accueil" — créer une fois à la main le sous-dossier chain/ dans Téléchargements pour la sauvegarde directe'
+  },
+  {
     plate: 'PL.15',
     group: 'outils',
     name: 'randos',
